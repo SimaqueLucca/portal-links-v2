@@ -1,4 +1,5 @@
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import { CompanyCard } from "../../components/Home/CompanyCard";
 import "./Home.scss";
 
 export function Home() {
@@ -11,10 +12,18 @@ export function Home() {
           marginTop={["2vw"]}
         >
           <Flex className="content" alignItems={"center"} flexWrap={"wrap"}>
-            <Box className="card"></Box>
-            <Box className="card"></Box>
-            <Box className="card"></Box>
-            <Button className="companyButton"> Empresa </Button>
+            <CompanyCard
+              companyName="Docly"
+              companyImage="../../../public/img/docly.png"
+            ></CompanyCard>
+            <CompanyCard
+              companyName="Manager"
+              companyImage="../../../public/img/manager.png"
+            ></CompanyCard>
+            <CompanyCard
+              companyName="Portais"
+              companyImage="../../../public/img/portais.png"
+            ></CompanyCard>
           </Flex>
         </Flex>
         <Flex className="banner"></Flex>
