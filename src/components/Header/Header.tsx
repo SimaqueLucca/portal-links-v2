@@ -6,10 +6,10 @@ export function Header() {
     <>
       <Flex
         className="navBar"
-        height={["10vw", "4vw"]}
+        height={["10vw", "10vw", "4vw"]}
         justifyContent={"center"}
       >
-        <Flex className="menu" width={["80%"]} padding={"0.5vw"}>
+        <Flex className="menu" width={["80%"]} padding={["0.5vw", "0.5vw"]}>
           <Link
             className="logoBox"
             height={["100%"]}
@@ -20,6 +20,7 @@ export function Header() {
               src="../../public/img/sbkLogo.png"
               height={["100%"]}
               className="logoSbk"
+              userSelect={"none"}
             ></Image>
           </Link>
           <Flex
@@ -28,8 +29,11 @@ export function Header() {
             alignItems={"center"}
             justifyContent={["flex-end"]}
           >
-            <Box className="button" padding={["0.5vw"]}>
-              <Link> Home </Link>
+            <Box className="button" padding={["0.5vw", "1vw"]}>
+              <Link textDecoration={"none!important"} userSelect={"none"}>
+                {" "}
+                Home{" "}
+              </Link>
             </Box>
           </Flex>
         </Flex>

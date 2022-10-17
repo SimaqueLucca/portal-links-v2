@@ -16,6 +16,13 @@ $backgroundColor: #121214;
 
 .logoBox {
   cursor: pointer;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .button {
@@ -25,5 +32,9 @@ $backgroundColor: #121214;
   cursor: pointer;
   &:hover {
     background-color: #292929;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

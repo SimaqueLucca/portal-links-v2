@@ -9,7 +9,7 @@ export function Home() {
         <Flex
           className="contentContainer"
           justifyContent={"center"}
-          marginTop={["10vw", "2vw"]}
+          marginTop={["10vw", "10vw", "2vw"]}
         >
           <Flex className="content" alignItems={"center"} flexWrap={"wrap"}>
             <CompanyCard
@@ -26,7 +26,7 @@ export function Home() {
             ></CompanyCard>
           </Flex>
         </Flex>
-        <Flex className="banner" h={["100vh", "50vw"]}></Flex>
+        <Flex className="banner" h={["100vh", "150vh", "100vh", "50vw"]}></Flex>
       </Flex>
     </>
   );
