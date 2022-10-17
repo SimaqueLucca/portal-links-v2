@@ -4,7 +4,11 @@ import "./Header.scss";
 export function Header() {
   return (
     <>
-      <Flex className="navBar" height={["4vw"]} justifyContent={"center"}>
+      <Flex
+        className="navBar"
+        height={["10vw", "4vw"]}
+        justifyContent={"center"}
+      >
         <Flex className="menu" width={["80%"]} padding={"0.5vw"}>
           <Link
             className="logoBox"

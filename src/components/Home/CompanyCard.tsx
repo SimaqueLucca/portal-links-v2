@@ -14,9 +14,11 @@ export function CompanyCard(props: props) {
         flexDirection={"column"}
         alignItems={"center"}
         justifyContent={"space-evenly"}
+        w={["60vw", "17vw"]}
+        h={["60vw", "17vw"]}
       >
-        <Image src={props.companyImage} width={["10vw"]}></Image>
-        <Text className="companyName" as={"b"}>
+        <Image src={props.companyImage} width={["25vw", "10vw"]}></Image>
+        <Text className="companyName" as={"b"} fontSize={["7vw", "1.5vw"]}>
           {props.companyName}
         </Text>
       </Flex>
